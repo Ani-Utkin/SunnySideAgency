@@ -1,0 +1,134 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --softRed: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --graphicText: hsl(167, 40%, 24%);
+    --photoText: hsl(198, 62%, 26%);
+    --footer: hsl(168, 34%, 41%);
+
+    --vDarkDesaturatedBlue: hsl(212, 27%, 19%);
+    --vDarkGrayishBlue: hsl(213, 9%, 39%);
+    --darkGrayishBlue: hsl(232, 10%, 55%);
+    --grayishBlue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.125rem;
+}
+
+.header {
+    background: url(./images/desktop/image-header.jpg) bottom 0 center/cover no-repeat;
+    color: var(--white);
+    min-height: 39rem;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2.1875rem;
+    align-items: center;
+}
+
+.links {
+    flex: 1 50%;
+    display: inline-block;
+    text-align: end;
+}
+
+.header_link {
+    margin-right: 2.1875rem;
+    color: var(--white);
+    font-size: 1rem;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+}
+    header_link:last-child {
+        margin-right: 0;
+    }
+
+
+a, a:visited {
+    text-decoration: none;
+}
+.cta {
+    color: black;
+    background-color: var(--white);
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    padding: 15px 25px;
+    border-radius: 30px;
+}
+.header_content {
+    margin-top: 3rem;
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 1.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.heading_name {
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+}
+
+.img_arrow {
+    margin-top: 50px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.graphic_design {
+}
+
+.photography {
+}
+
+@media (max-width: 47.9375rem) {
+    .header_link, .cta {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+
+}
+
+/*
+font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif;
+*/
